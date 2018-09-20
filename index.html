@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simplefun37</title>
+</head>
+<body>
+    <script>
+        function houseNumbersSum(inputArray) {
+            let summ = 0;
+            for (let i = 0; i < inputArray.length; i++){
+                summ += inputArray[i];
+                if (inputArray[i] == 0){
+                    break;
+                }
+            }
+            return summ;
+        }
+        console.log(houseNumbersSum([5, 1, 2, 3, 0, 1, 5, 0, 2]));
+    </script>
+</body>
+</html>
